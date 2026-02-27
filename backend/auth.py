@@ -5,9 +5,9 @@ import requests
 
 #queti ovviamente li ho messi qua
 #per comodità, ma sapete dove vanno :)
-KEYCLOAK_URL = "URL KEYCLOAK"
-REALM        = "NOME REALM KEYCLOAK"
-CLIENT_ID    = "CLIENT ID KEYCLOAK"
+KEYCLOAK_URL = "https://stunning-system-wr66rq45rwqg3g49-8080.app.github.dev/"
+REALM        = "prova"
+CLIENT_ID    = "provapp"
 JWKS_URL     = f"{KEYCLOAK_URL}/realms/{REALM}/protocol/openid-connect/certs"
 
 
