@@ -10,6 +10,10 @@ services:
       KC_HOSTNAME_STRICT: "false"
       KC_PROXY_HEADERS: "xforwarded"
     ports:
-    - "8080:8080"
+      - "8080:8080"
+    # --- QUESTA È LA PARTE NUOVA ---
+    volumes:
+      - ./keycloak_data:/opt/keycloak/data
+    # -------------------------------
     command:
-    - start-dev
+      - start-dev
